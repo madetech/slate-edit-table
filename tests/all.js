@@ -4,11 +4,11 @@ const path = require('path');
 const Slate = require('slate');
 const readMetadata = require('read-metadata');
 
-const EditList = require('../lib');
+const EditTable = require('../lib');
 
-describe('slate-edit-list', function() {
+describe('slate-edit-table', function() {
     const tests = fs.readdirSync(__dirname);
-    const plugin = EditList();
+    const plugin = EditTable({ permittedCellBlocks: ['test_paragraph'] });
 
     tests.forEach(function(test) {
         if (test[0] === '.' || path.extname(test).length > 0) return;
