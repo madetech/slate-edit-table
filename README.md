@@ -33,6 +33,7 @@ const plugins = [
 - ``[typeTable: String]`` — type for table
 - ``[typeRow: String]`` — type for the rows.
 - ``[typeCell: String]`` — type for the cells.
+- ``[permittedCellBlocks: Array]`` — Array of blocks allowed in cells.
 
 ### Utilities and Transform
 
